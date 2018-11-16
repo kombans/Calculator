@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import store from "./store";
-import CalcBrain from "./containers/CalcBrain";
+import App from "./component/App";
+import "github-fork-ribbon-css/gh-fork-ribbon.css";
 
-ReactDOM.render(
-  <Provider store={store}>
-    <CalcBrain />
-  </Provider>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
